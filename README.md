@@ -14,8 +14,10 @@ At the moment we've go a simple list. Though it would be good to list more infor
 
 - [CadQuery](https://cadquery.readthedocs.io/en/latest/installation.html)
 - [Curv](http://www.curv3d.org/)
+- [implicitCAD](http://www.implicitcad.org/)
 - [JSCAD](https://openjscad.org/)
 - [libfive](http://libfive.com/)
 - [OpenScad](http://www.openscad.org/)
+- [RapCAD](https://gilesbathgate.com/category/rapcad/)
 - [ShapeScript](https://apps.apple.com/us/app/shapescript/id1441135869?mt=12)
 - [SolidPython](https://solidpython.readthedocs.io/en/latest/)
