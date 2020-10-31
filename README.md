@@ -8,9 +8,21 @@ You'll have to figure that out for yourself, but here are some options.
 ## Special mention
 
 ### [OpenScad](http://www.openscad.org/)
+- [Repo](https://github.com/openscad/openscad)
+- [Community](http://www.openscad.org/community.html)
+- [Docs](http://www.openscad.org/documentation.html)
+- License: GPL-2
+- ~Online editor~
+
 The rest of the packages are in alphabetical order, but OpenScad gets a special mention because it's the OG. Many of the projects below were inspired by OpenScad and is the most well-known choice. If you're new to code-cad this is the safest choice, even if only from tutorials and content perspective.
 
-### [OpenCascade](https://github.com/tpaviot/oce)
+### [OpenCascade](https://www.opencascade.com/)
+- [Repo](https://github.com/tpaviot/oce)
+- [Community](https://dev.opencascade.org/)
+- [Docs](https://old.opencascade.com/doc/occt-6.9.1/refman/html/index.html)
+- License: LGPL-2.1
+- ~Online editor~
+
 It's a c++ library that a number the projects below wrap.
 
 ## Contributing
@@ -19,12 +31,6 @@ Know of a package that we missed? tell us with an issue or open up a PR.
 The description for each package is pretty minimal at the moment. If you'd like to add more detail to any of them please go ahead.
 
 ## Here they are:
-
-- [Repo]()
-- [Community]()
-- [Docs]()
-- License: Apache, 2.0
-- [Online editor]()
 
 ### [CadQuery](https://cadquery.readthedocs.io/en/latest/intro.html)
 - [Repo](https://github.com/CadQuery/cadquery)
