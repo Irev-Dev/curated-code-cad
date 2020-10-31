@@ -21,6 +21,7 @@ At the moment we've go a simple list. Though it would be good to list more infor
 - [JSCAD](https://openjscad.org/)
 - [libfive](http://libfive.com/)
 - [OpenScad](http://www.openscad.org/)
+- [pythonOCC](http://www.pythonocc.org/)
 - [RapCAD](https://gilesbathgate.com/category/rapcad/)
 - [ShapeScript](https://apps.apple.com/us/app/shapescript/id1441135869?mt=12)
 - [SolidPython](https://solidpython.readthedocs.io/en/latest/)
