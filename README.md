@@ -74,6 +74,6 @@ Not quiet Code-Cad, but they do embody much of the same thought process.
 
 Works with FreeCad
 
-### [Solid General Fuse](https://github.com/nortikin/sverchok)
+### [Sverchok](https://github.com/nortikin/sverchok)
 
 Add-on for blender. Sverchok is a powerful parametric tool for architects, allowing geometry to be programmed visually with nodes. 
