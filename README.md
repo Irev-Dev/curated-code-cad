@@ -2,13 +2,13 @@
 
 <img src="https://raw.githubusercontent.com/Irev-Dev/repo-images/main/images/CURATED-CODE-CAD-BANNER2.jpg">
 
-You like 3d modeling, but don't like using a GUI. Good for you! But which modeler do you use??
+You like 3d modelling, but don't like using a GUI. Good for you! But which modeller do you use??
 You'll have to figure that out for yourself, but here are some options.
 
-## Special meniton
+## Special mention
 
 ### [OpenScad](http://www.openscad.org/)
-The rest of the packages are in alphabetical order, but OpenScad gets a special mention because it's the OG. Many of the projects below were inspired by OpenScad and is the most well know choice. If you're new to code-cad this is the safest choice, even if only from a tutorials and content perspective.
+The rest of the packages are in alphabetical order, but OpenScad gets a special mention because it's the OG. Many of the projects below were inspired by OpenScad and is the most well-known choice. If you're new to code-cad this is the safest choice, even if only from tutorials and content perspective.
 
 ### [OpenCascade](https://github.com/tpaviot/oce)
 It's a c++ library that a number the projects below wrap.
@@ -34,25 +34,26 @@ Curv is a programming language for creating art using mathematics. It’s a 2D a
 
 ### [FreeCAD](https://www.freecadweb.org/)
 
-FreeCad is a more traditional CAD package that supports python scripting, Both for modeling as well as controling the FreeCAD GUI itself. Not only that it has a built in [OpenScad workbench](https://wiki.freecadweb.org/OpenSCAD_Module) as well as an external [CadQurey workbench](https://wiki.freecadweb.org/CadQuery_Workbench), making it the best in this list at interoperability.
+FreeCad is a more traditional CAD package that supports python scripting, Both for modelling as well as controlling the FreeCAD GUI itself. Not only that it has a built in [OpenScad workbench](https://wiki.freecadweb.org/OpenSCAD_Module) as well as an external [CadQurey workbench](https://wiki.freecadweb.org/CadQuery_Workbench), making it the best in this list at interoperability.
 [Community forum](https://forum.freecadweb.org/)
+
  
 ### [implicitCAD](http://www.implicitcad.org/)
 
-Inspired by OpenScad with a very similar langauge, implemented in haskell.
+Inspired by OpenScad with a very similar language, implemented in Haskell.
 
 ### [JSCAD](https://openjscad.org/)
 
-Formerly OpenJsCad, also inspired by OpenScad. The project is close to a v2.0 release. Implemented in javascript allowing it to be modeled directly within a brower.
+Formerly OpenJsCad, also inspired by OpenScad. The project is close to a v2.0 release. Implemented in javascript allowing it to be modelled directly within a browser.
 [Community forum](https://openjscad.nodebb.com/)
 
 ### [libfive](http://libfive.com/)
 
-libfive is a software library and set of tools for solid modeling, especially suited for parametric and procedural design. lisp based language, (so (you (((((can expect ) lots of brakets))))).
+libfive is a software library and set of tools for solid modelling, especially suited for parametric and procedural design. lisp based language, (so (you (((((can expect ) lots of brakets))))).
 
 ### [pythonOCC](http://www.pythonocc.org/)
 
-Python based, Also uses [OpenCascade](https://github.com/tpaviot/oce).
+Python-based, Also uses [OpenCascade](https://github.com/tpaviot/oce).
 
 ### [RapCAD](https://gilesbathgate.com/category/rapcad/)
 
@@ -64,7 +65,7 @@ Mac App
 
 ### [SolidPython](https://solidpython.readthedocs.io/en/latest/)
 
-Python based library that wraps OpenScad, i.e. it outputs OpenScad code.
+Python-based library that wraps OpenScad, i.e. it outputs OpenScad code.
 
 ## Node editors
 
