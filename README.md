@@ -2,6 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/Irev-Dev/repo-images/main/images/CURATED-CODE-CAD-BANNER2.jpg">
 
+#### [See the web page version](https://kurthutten.com/blog/curated-code-cad/)
+
 You like 3d modelling, but don't like using a GUI. Good for you! But which modeller do you use??
 You'll have to figure that out for yourself, but here are some options.
 
