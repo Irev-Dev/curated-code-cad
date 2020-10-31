@@ -32,7 +32,7 @@ A javascript wrapper for [OpenCascade](https://github.com/tpaviot/oce) that runs
 
 Curv is a programming language for creating art using mathematics. It’s a 2D and 3D geometric modelling tool that supports full colour, animation and 3D printing. It was inspired by OpenScad and [shadertoy](https://www.shadertoy.com/).
 
-### [FreeCAD](https://www.freecadweb.org/) - has python scripting features
+### [FreeCAD](https://www.freecadweb.org/)
 
 FreeCad is a more traditional CAD package that supports python scripting, Both for modeling as well as controling the FreeCAD GUI itself. Not only that it has a built in [OpenScad workbench](https://wiki.freecadweb.org/OpenSCAD_Module) as well as an external [CadQurey workbench](https://wiki.freecadweb.org/CadQuery_Workbench), making it the best in this list at interoperability.
 [Community forum](https://forum.freecadweb.org/)
