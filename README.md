@@ -75,7 +75,7 @@ FreeCad is a more traditional CAD package that supports python scripting, Both f
 - License: AGPL-3
 - [Online editor](http://www.implicitcad.org/editor)
 
-Inspired by OpenScad with a very similar language, implemented in Haskell.
+Inspired by OpenScad with a very similar language, implemented in Haskell and includes the ability to write definitions in Haskell, instead of just OpenSCAD, and is part of an 'almost stack' of tools including ExplicitCAD (for a GUI), and HSlice (for an STL slicer).
 
 ### [JSCAD](https://openjscad.org/)
 - [Repo](https://github.com/jscad/OpenJSCAD.org)
