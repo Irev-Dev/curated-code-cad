@@ -14,6 +14,7 @@ At the moment we've go a simple list. Though it would be good to list more infor
 
 - [CadQuery](https://cadquery.readthedocs.io/en/latest/installation.html)
 - [Curv](http://www.curv3d.org/)
+- [FreeCAD](https://www.freecadweb.org/) - has python scripting features
 - [implicitCAD](http://www.implicitcad.org/)
 - [JSCAD](https://openjscad.org/)
 - [libfive](http://libfive.com/)
