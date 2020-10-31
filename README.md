@@ -1,4 +1,6 @@
-# curated code cad ⚙️ 👩‍🔧
+# Curated Code Cad ⚙️ 👩‍🔧
+
+<img src="https://raw.githubusercontent.com/Irev-Dev/repo-images/main/images/CURATED-CODE-CAD-BANNER2.jpg">
 
 You like 3d modeling, but don't like using a GUI. Good for you! But which modeler do you use??
 You'll have to figure that out for yourself, but here are some options.
