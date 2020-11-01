@@ -113,7 +113,7 @@ Python-based, Also uses [OpenCascade](https://github.com/tpaviot/oce).
 - License: GPL-3
 - ~Online editor~
 
-Another project inspired by OpenScad.
+Another project inspired by OpenScad. The author considers key differences to be procedural vs functional programming language style, (i.e variables can be modified) and the use of arbitrary precision arithmetic throughout (meaning there are no unexpected double/float rounding errors). There is a handy [feature matrix](https://github.com/GilesBathgate/RapCAD/blob/master/doc/feature_matrix.asciidoc) betwen RapCAD, OpenScad and ImplicitCad.
 
 ### [SolidPython](https://solidpython.readthedocs.io/en/latest/)
 - [Repo](https://github.com/SolidCode/SolidPython)
