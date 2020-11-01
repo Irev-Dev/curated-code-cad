@@ -65,7 +65,7 @@ Curv is a programming language for creating art using mathematics. It’s a 2D a
 - [Repo](https://github.com/FreeCAD/FreeCAD)
 - [Community](https://forum.freecadweb.org/)
 - [Docs](https://wiki.freecadweb.org/Getting_started)
-- License: GPL-2
+- License: LGPLv2
 - ~Online editor~
 
 FreeCad is a more traditional CAD package that supports python scripting, Both for modelling as well as controlling the FreeCAD GUI itself. Not only that it has a built in [OpenScad workbench](https://wiki.freecadweb.org/OpenSCAD_Module) as well as an external [CadQurey workbench](https://wiki.freecadweb.org/CadQuery_Workbench), making it the best in this list at interoperability.
