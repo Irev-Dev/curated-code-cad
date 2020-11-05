@@ -41,7 +41,12 @@ The description for each package is pretty minimal at the moment. If you'd like 
 - License: Apache, 2.0
 - ~Online editor~
 
-CadQuery is a Python library that wraps and extends [OpenCascade](https://github.com/tpaviot/oce). It aims to let you model as "close as possible to how you’d describe the object to a human".
+CadQuery is a Python library that wraps and extends [OpenCascade](https://github.com/tpaviot/oce). It aims to let you model as "close as possible to how you’d describe the object to a human" .
+
+
+    OpenCASCADE (OCCT) is a BRep kernel, which is a very powerful way to represent geometry. This is in contrast to OpenSCAD which uses the CSG kernel. Both approaches are great and people should use what they want, but I prefer working with BRep.
+    Related to "close as possible to how you’d describe the object to a human" is the idea of "capturing design intent". For example, by using selectors instead of picking specific edges manually, the user can be sure the edges they intended to have fillets are always filleted, even if other aspects of the design changes.
+
 
 ### [CascadeStudio](https://zalo.github.io/CascadeStudio/)
 - [Repo](https://github.com/zalo/CascadeStudio)
@@ -79,14 +84,27 @@ FreeCad is a more traditional CAD package that supports python scripting, Both f
 
 Inspired by OpenScad with a very similar language, implemented in Haskell and includes the ability to write definitions in Haskell, instead of just OpenSCAD, and is part of an 'almost stack' of tools including ExplicitCAD (for a GUI), and HSlice (for an STL slicer).
 
-### [JSCAD](https://openjscad.org/)
+### [JSCAD](www.jscad.xyz)
 - [Repo](https://github.com/jscad/OpenJSCAD.org)
 - [Community](https://openjscad.nodebb.com/)
 - [Docs](https://openjscad.org/dokuwiki/doku.php?id=jscad_quick_reference)
 - License: MIT
 - [Online editor](https://openjscad.org/)
 
-Formerly OpenJsCad, also inspired by OpenScad. The project is close to a v2.0 release. Implemented in javascript allowing it to be modelled directly within a browser.
+JSCAD (formally know as OpenJSCAD) provides a programmer’s approach to develop 3D models. In particular, this functionality is tuned towards creating precise models for 3D printing.
+
+JSCAD provides the ability to:
+- Create and manipulate 3D models, as well as 2D models
+- Use JavaScript programming concepts, and libraries
+- Save 3D models as STL (and other) formats
+
+JSCAD is available as a:
+- [Website](www.jscad.xyz)
+- Command line application for backend processing
+- User application
+- Set of packages (libraries) for building custom applications
+
+JSCAD allows anyone to create 3D (or 2D) designs by combining simple shapes. And any shape can be rotated, moved, scaled, etc. Complex shapes can be saved as parts, which can used later. And the final design can be exported into various standard formats, i.e. STL, DXF, SVG, etc.
 
 ### [libfive](http://libfive.com/)
 - [Repo](https://github.com/libfive/libfive)
