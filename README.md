@@ -25,7 +25,7 @@ The rest of the packages are in alphabetical order, but OpenScad gets a special 
 - License: LGPL-2.1
 - ~Online editor~
 
-It's a c++ library that a number the projects below wrap. OpenCascade uses a Boundary representation (Brep) kernel, which is a powerful way representing solid geometery, this is a point of difference for some many of the other projects that use a polygon mesh.
+It's a c++ library that a number the projects below wrap. OpenCascade uses a Boundary representation (B-rep) kernel, which is a powerful way representing solid geometery, this is a point of difference for some many of the other projects that use a polygon mesh.
 
 ## Contributing
 
