@@ -44,10 +44,6 @@ The description for each package is pretty minimal at the moment. If you'd like 
 CadQuery is a Python library that wraps and extends [OpenCascade](https://github.com/tpaviot/oce). It aims to let you model as "close as possible to how you’d describe the object to a human" .
 
 
-    OpenCASCADE (OCCT) is a BRep kernel, which is a very powerful way to represent geometry. This is in contrast to OpenSCAD which uses the CSG kernel. Both approaches are great and people should use what they want, but I prefer working with BRep.
-    Related to "close as possible to how you’d describe the object to a human" is the idea of "capturing design intent". For example, by using selectors instead of picking specific edges manually, the user can be sure the edges they intended to have fillets are always filleted, even if other aspects of the design changes.
-
-
 ### [CascadeStudio](https://zalo.github.io/CascadeStudio/)
 - [Repo](https://github.com/zalo/CascadeStudio)
 - ~Community~ repo says to use github issues
