@@ -25,7 +25,7 @@ The rest of the packages are in alphabetical order, but OpenScad gets a special 
 - License: LGPL-2.1
 - ~Online editor~
 
-It's a c++ library that a number the projects below wrap. OpenCascade uses a Boundary representation (B-rep) kernel, which is a powerful way representing solid geometery, this is a point of difference for some many of the other projects that use a polygon mesh.
+It's a c++ library that a number the projects below wrap. OpenCascade uses a Boundary representation (B-rep) kernel, which is a powerful way representing solid geometry, this is a point of difference for some many of the other projects that use a polygon mesh.
 
 ## Contributing
 
@@ -41,7 +41,7 @@ The description for each package is pretty minimal at the moment. If you'd like 
 - License: Apache, 2.0
 - ~Online editor~
 
-CadQuery is a Python library that wraps and extends [OpenCascade](https://github.com/tpaviot/oce). It has a philosphy of capturing design intent. The api has been design to be as close as possible to how you’d describe the object to a human. An example of this is it's ability to "select" parts of the models geometry to run opperations on, such as the following code that selects only the edges running along the Z axis and fillets them.
+CadQuery is a Python library that wraps and extends [OpenCascade](https://github.com/tpaviot/oce). It has a philosophy of capturing design intent. The API has been designed to be as close as possible to how you’d describe the object to a human. An example of this is its ability to "select" parts of the model's geometry to run operations on, such as the following code that selects only the edges running along the Z-axis and fillets them.
 
 ```python
 result = cq.Workplane("XY" ).box(3, 3, 0.5).edges("|Z").fillet(0.125)
