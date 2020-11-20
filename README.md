@@ -156,7 +156,7 @@ Not quiet Code-Cad, but they do embody much of the same thought process.
 
 ### [Dynamo](https://github.com/infeeeee/DynFreeCAD)
 - [Repo](https://github.com/DynamoDS/Dynamo)
-- ~[Community](https://forum.dynamobim.com/)
+- [Community](https://forum.dynamobim.com/)
 - [Docs](https://primer.dynamobim.org/)
 - License: Apache 2.0
 - ~Online editor~
