@@ -154,14 +154,14 @@ Not quiet Code-Cad, but they do embody much of the same thought process.
 - License: GPL-3
 - [Online editor](https://www.blockscad3d.com)
 
-### [DynFreeCAD](https://github.com/infeeeee/DynFreeCAD)
-- [Repo](https://github.com/infeeeee/DynFreeCAD)
-- [Community](https://forum.dynamobim.com/)
-- [Docs](https://github.com/infeeeee/DynFreeCAD/wiki)
-- License: MIT
+### [Dynamo](https://github.com/infeeeee/DynFreeCAD)
+- [Repo](https://github.com/DynamoDS/Dynamo)
+- ~[Community](https://forum.dynamobim.com/)
+- [Docs](https://primer.dynamobim.org/)
+- License: Apache 2.0
 - ~Online editor~
 
-Works with FreeCad
+Dynamo is, quite literally, what you make it. Working with Dynamo may include using the application, either in connection with other Autodesk software or not, engaging a Visual Programming process, or participating in a broad community of users and contributors. Works with [FreeCad](https://github.com/infeeeee/DynFreeCAD)
 
 ### [Sverchok](https://github.com/nortikin/sverchok)
 - [Repo](https://github.com/nortikin/sverchok)
@@ -171,9 +171,5 @@ Works with FreeCad
 - ~Online editor~
 
 Add-on for blender. Sverchok is a powerful parametric tool for architects, allowing geometry to be programmed visually with nodes. 
-
-## Proprietary
-
-### [ShapeScript](https://apps.apple.com/us/app/shapescript/id1441135869?mt=12)
 
 Mac App
