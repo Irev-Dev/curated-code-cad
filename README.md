@@ -134,6 +134,15 @@ Python-based, Also uses [OpenCascade](https://github.com/tpaviot/oce).
 
 Another project inspired by OpenScad. The author considers key differences to be procedural vs functional programming language style, (i.e variables can be modified) and the use of arbitrary precision arithmetic throughout (meaning there are no unexpected double/float rounding errors). There is a handy [feature matrix](https://github.com/GilesBathgate/RapCAD/blob/master/doc/feature_matrix.asciidoc) between RapCAD, OpenScad and ImplicitCad.
 
+### [scad-clj](https://github.com/farrellm/scad-clj)
+- [Repo](https://github.com/farrellm/scad-clj)
+- ~Community~
+- ~Docs~ (No docs but mirrors openscad functions)
+- License: EPL-1.0
+- ~Online editor~
+
+OpenSCAD DSL in Clojure. Functions generally mirror OpenSCAD, with a couple of notable exceptions.
+
 ### [SolidPython](https://solidpython.readthedocs.io/en/latest/)
 - [Repo](https://github.com/SolidCode/SolidPython)
 - ~Community~
