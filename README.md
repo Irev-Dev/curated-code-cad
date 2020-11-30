@@ -34,6 +34,15 @@ The description for each package is pretty minimal at the moment. If you'd like 
 
 ## Here they are:
 
+### [CadHub](https://cadhub.xyz/)
+- [Repo](https://github.com/Irev-Dev/cadhub)
+- [Community](https://discord.com/invite/SD7zFRNjGH)
+- ~Docs~
+- License: GPL-3
+- [Online editor](https://cadhub.xyz/)
+
+A community hub for sharing code-cad projects. Currently integrates with the excellent [CascadeStudio](https://zalo.github.io/CascadeStudio/). Built and maintained by yours truely.
+
 ### [CadQuery](https://cadquery.readthedocs.io/en/latest/intro.html)
 - [Repo](https://github.com/CadQuery/cadquery)
 - [Community](https://discord.gg/qz3uAdF)
@@ -56,7 +65,7 @@ result = cq.Workplane("XY" ).box(3, 3, 0.5).edges("|Z").fillet(0.125)
 - License: MIT
 - [Online editor](https://zalo.github.io/CascadeStudio/)
 
-A javascript wrapper for [OpenCascade](https://github.com/tpaviot/oce) that runs in the browser. (OpenCascade can run in the browser when compiled to web-assembly).
+A javascript wrapper for [OpenCascade](https://github.com/tpaviot/oce) that runs in the browser. (OpenCascade can run in the browser when compiled to web-assembly). [CadHub](https://cadhub.xyz/) integrates with CascadeStudio.
 
 ### [Curv](http://www.curv3d.org/)
 - [Repo](https://github.com/curv3d/curv)
