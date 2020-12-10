@@ -125,14 +125,14 @@ JSCAD is available as a:
 
 JSCAD allows anyone to create 3D (or 2D) designs by combining simple shapes. And any shape can be rotated, moved, scaled, etc. Complex shapes can be saved as parts, which can used later. And the final design can be exported into various standard formats, i.e. STL, DXF, SVG, etc.
 
-### [libfive](http://libfive.com/)
+### [libfive](https://libfive.com/)
 - [Repo](https://github.com/libfive/libfive)
-- [Community](https://lists.gnu.org/archive/html/guile-user/2016-08/msg00027.html) (mailing list)
+- [Community](https://github.com/libfive/libfive/issues) (Github Issues)
 - [Docs](https://libfive.com/examples/)
 - License: Mozilla Public License 2.0 and GPL-2 or later
 - ~Online editor~
 
-libfive is a software library and set of tools for solid modelling, especially suited for parametric and procedural design. lisp based language, (so (you (((((can expect ) lots of brakets))))).
+Libfive is a software library and set of tools for solid modelling, especially suited for parametric and procedural design. Lisp based language, (so (you (((((can expect ) lots of parentheses))))).
 
 ### [pythonOCC](http://www.pythonocc.org/)
 - [Repo](https://github.com/tpaviot/pythonocc-core)
@@ -178,6 +178,15 @@ Same author as scad-cji, he likes functional programming languages clearly.
 - ~Online editor~
 
 Python-based library that wraps OpenScad, i.e. it outputs OpenScad code.
+
+### [Tovero](https://www.gitlab.com/kavalogic-inc/tovero)
+- [Repo](https://www.gitlab.com/kavalogic-inc/tovero)
+- [Community](https://gitlab.com/kavalogic-inc/tovero/-/issues) (Gitlab Issues)
+- [Docs](https://gitlab.com/kavalogic-inc/tovero/-/blob/master/README)
+- License: LGPL-2.1 or later and GPL-2 or later
+- ~Online editor~
+
+Tovero is a binding of Libfive to Common Lisp, including a standalone REPL-based viewer.  Tovero can be integrated with [Clive](https://www.gitlab.com/kavalogic-inc/clive), a Common Lisp scene graph and 3D GUI, to build more complex modeling applications.
 
 ## Node editors / other
 
