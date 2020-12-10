@@ -34,6 +34,15 @@ The description for each package is pretty minimal at the moment. If you'd like 
 
 ## Here they are:
 
+### [AngelCAD](https://arnholm.github.io/angelcad-docs/)
+- [Repo](https://github.com/arnholm/angelcad)
+- ~Community~
+- [Docs](https://arnholm.github.io/angelcad-docs/)
+- License: GPL-2 or GPL-3
+- ~Online editor~
+
+Another OpenSCAD style project
+
 ### [CadHub](https://cadhub.xyz/)
 - [Repo](https://github.com/Irev-Dev/cadhub)
 - [Community](https://discord.com/invite/SD7zFRNjGH)
