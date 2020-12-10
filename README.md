@@ -161,6 +161,15 @@ Another project inspired by OpenScad. The author considers key differences to be
 
 OpenSCAD DSL in Clojure. Functions generally mirror OpenSCAD, with a couple of notable exceptions.
 
+### [scad-hs](https://github.com/farrellm/scad-hs)
+- [Repo](https://github.com/farrellm/scad-hs)
+- ~Community~
+- ~Docs~ (No docs but mirrors openscad functions)
+- License: BSD-3-Clause License 
+- ~Online editor~
+
+Same author as scad-cji, he likes functional programming languages clearly.
+
 ### [SolidPython](https://solidpython.readthedocs.io/en/latest/)
 - [Repo](https://github.com/SolidCode/SolidPython)
 - ~Community~
