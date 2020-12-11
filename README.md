@@ -36,12 +36,17 @@ The description for each package is pretty minimal at the moment. If you'd like 
 
 ### [AngelCAD](https://arnholm.github.io/angelcad-docs/)
 - [Repo](https://github.com/arnholm/angelcad)
-- ~Community~
+- [Community](https://forum.abmesh.com/index.php)
 - [Docs](https://arnholm.github.io/angelcad-docs/)
 - License: GPL-2 or GPL-3
 - ~Online editor~
 
-Another OpenSCAD style project
+AngelCAD aim to do two things:
+1) Offer an embedded, but general purpose scripting language for Constructive Solid Geometry, via [AngelScript](https://www.angelcode.com/angelscript/). This allows for a natural programming style with true variables, user defined functions and even classes. Programmers should feel at home. See [AngelCAD sample scripts](https://github.com/arnholm/angelcad-samples).
+
+2) Offer a fast boolean engine, which is powered by [Carve](https://github.com/arnholm/carve) is used for this purpose. This means that AngelCAD is generally many times faster than other mesh based systems. 
+
+AngelCAD is capable of running OpenSCAD script for interoperability, and has features like text support and DXF import comming soon.
 
 ### [CadHub](https://cadhub.xyz/)
 - [Repo](https://github.com/Irev-Dev/cadhub)
@@ -215,6 +220,4 @@ Dynamo is, quite literally, what you make it. Working with Dynamo may include us
 - License: GPL-3
 - ~Online editor~
 
-Add-on for blender. Sverchok is a powerful parametric tool for architects, allowing geometry to be programmed visually with nodes. 
-
-Mac App
+Add-on for blender. Sverchok is a powerful parametric tool for architects, allowing geometry to be programmed visually with nodes.
