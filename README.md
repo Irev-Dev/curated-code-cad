@@ -42,11 +42,11 @@ The description for each package is pretty minimal at the moment. If you'd like 
 - ~Online editor~
 
 AngelCAD aim to do two things:
-1) Offer an embedded, but general purpose scripting language for Constructive Solid Geometry, via [AngelScript](https://www.angelcode.com/angelscript/). This allows for a natural programming style with true variables, user defined functions and even classes. Programmers should feel at home. See [AngelCAD sample scripts](https://github.com/arnholm/angelcad-samples).
+1) Offer an embedded, but general-purpose scripting language for Constructive Solid Geometry, via [AngelScript](https://www.angelcode.com/angelscript/). This allows for a natural programming style with true variables, user-defined functions and even classes. Programmers should feel at home. See [AngelCAD sample scripts](https://github.com/arnholm/angelcad-samples).
 
-2) Offer a fast boolean engine, which is powered by [Carve](https://github.com/arnholm/carve) is used for this purpose. This means that AngelCAD is generally many times faster than other mesh based systems. 
+2) Offer a fast boolean engine, which is powered by [Carve](https://github.com/arnholm/carve) is used for this purpose. This means that AngelCAD is generally many times faster than other mesh-based systems. 
 
-AngelCAD is capable of running OpenSCAD script for interoperability, and has features like text support and DXF import comming soon.
+AngelCAD is capable of running OpenSCAD script for interoperability and has features like text support and DXF import coming soon.
 
 ### [CadHub](https://cadhub.xyz/)
 - [Repo](https://github.com/Irev-Dev/cadhub)
@@ -55,7 +55,7 @@ AngelCAD is capable of running OpenSCAD script for interoperability, and has fea
 - License: GPL-3
 - [Online editor](https://cadhub.xyz/)
 
-A community hub for sharing code-cad projects. Currently integrates with the excellent [CascadeStudio](https://zalo.github.io/CascadeStudio/). Built and maintained by yours truely.
+A community hub for sharing code-cad projects. Currently integrates with the excellent [CascadeStudio](https://zalo.github.io/CascadeStudio/). Built and maintained by yours truly.
 
 ### [CadQuery](https://cadquery.readthedocs.io/en/latest/intro.html)
 - [Repo](https://github.com/CadQuery/cadquery)
