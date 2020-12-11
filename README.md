@@ -186,7 +186,7 @@ Python-based library that wraps OpenScad, i.e. it outputs OpenScad code.
 - License: LGPL-2.1 or later and GPL-2 or later
 - ~Online editor~
 
-Tovero is a binding of Libfive to Common Lisp, including a standalone REPL-based viewer.  Tovero can be integrated with [Clive](https://www.gitlab.com/kavalogic-inc/clive), a Common Lisp scene graph and 3D GUI, to build more complex modeling applications.
+Tovero is a binding of Libfive to Common Lisp, including a standalone REPL-based viewer.  Tovero can be integrated with [Clive](https://www.gitlab.com/kavalogic-inc/clive), a Common Lisp scene graph and 3D GUI, to build more complex modelling applications.
 
 ## Node editors / other
 
