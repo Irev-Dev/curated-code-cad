@@ -1,3 +1,4 @@
+import math
 width = 120
 extendedWidth = width*1.1
 height = 85
@@ -57,53 +58,7 @@ def makeFrame(partName, plane = 'YZ_Plane'):
 # makeFrame('initial')
 # makeFrame('copy', 'XZ_Plane')
 
-# points = [
-#     {
-#         'name': 'baseR',
-#         'constraint': 'AcuteTangent',
-#     },
-#     {
-#         'name': 'baseL',
-#         'constraint': 'AcuteTangent',
-#     },
-#     {
-#         'name': 'bottomFilletL',
-#         'constraint': 'Tangent',
-#     },
-#     {
-#         'name': 'TopFilletL',
-#         'constraint': 'Tangent',
-#     },
-#     {
-#         'name': 'TopFilletR',
-#         'constraint': 'Tangent',
-#     },
-#     {
-#         'name': 'bottomFilletR',
-#         'constraint': 'Tangent',
-#     },
-# ]
-
-# segments = [
-#     {
-#         'type': 'arc'
-#         'pointA': 'bottomFilletR',
-#         'pointB': 'baseR',
-#     },
-#     {
-#         'type': 'arc'
-#         'pointA': 'baseL',
-#         'pointB': 'bottomFilletL',
-#     },
-#     {
-#         'type': 'arc'
-#         'pointA': 'TopFilletL',
-#         'pointB': 'TopFilletR',
-#     },
-# ]
-
-
-def makeSketch(sketchName, plane = 'YZ_Plane', points=[], constraints=[]):
+def makeSketch(sketchName, plane = 'YZ_Plane', points=[], constraints=[], segments={}):
     partName = sketchName
     plane = 'YZ_Plane'
     baseFrameName = sketchName
@@ -120,9 +75,28 @@ def makeSketch(sketchName, plane = 'YZ_Plane', points=[], constraints=[]):
         ActiveSketch.addConstraint(Sketcher.Constraint('Coincident',lineIdx,1,pointIdx1,1))
         ActiveSketch.addConstraint(Sketcher.Constraint('Coincident',lineIdx,2,pointIdx2,1))
         return lineIdx
+    
+    def addArc(pointIdx1, pointIdx2):
+        # radius = 1000
+        point1 = ActiveSketch.Geometry[pointIdx1]
+        point2 = ActiveSketch.Geometry[pointIdx2]
+        centerX = (point1.X + point2.X)/2
+        centerY = (point1.Y + point2.Y)/2
+        radius = math.sqrt((point1.X - point2.X)**2 + (point1.Y - point2.Y)**2)/2
+        # lineIdx = ActiveSketch.addGeometry(Part.ArcOfCircle(Part.Circle(App.Vector(point1.X,point1.Y,0),App.Vector(0,0,1),radius),point2.X,point2.Y),False)
+        # lineIdx = ActiveSketch.addGeometry(Part.ArcOfCircle(Part.Circle(App.Vector(0.01,0.02,0),App.Vector(0,0,1),100),1.03,1.04),False)
+        lineIdx = ActiveSketch.addGeometry(Part.ArcOfCircle(Part.Circle(App.Vector(centerX,centerY,0),App.Vector(0,0,1),radius),3.871755,0.80),False)
+        # lineIdx = ActiveSketch.addGeometry(Part.ArcOfCircle(Part.Circle(App.Vector(0.01,0.02,0),App.Vector(0,0,1),100),1.03,1.04),False)
+        ActiveSketch.addConstraint(Sketcher.Constraint('Coincident',lineIdx,1,pointIdx1,1))
+        ActiveSketch.addConstraint(Sketcher.Constraint('Coincident',lineIdx,2,pointIdx2,1))
+        return lineIdx
 
     myMap = {}
     print(myMap)
+
+# App.getDocument('Unnamed').getObject('hookBase').addGeometry(Part.ArcOfCircle(Part.Circle(App.Vector(20.01,20.02,0),App.Vector(0,0,1),1000),21.03,21.04),False)
+# App.getDocument('Unnamed').getObject('hookBase').addConstraint(Sketcher.Constraint('Coincident',10,1,3,1)) 
+# App.getDocument('Unnamed').getObject('hookBase').addConstraint(Sketcher.Constraint('Coincident',10,2,4,1))
 
     for index in range(len(points)):
         xPoint = 0.5 if index == 0 else index
@@ -135,24 +109,40 @@ def makeSketch(sketchName, plane = 'YZ_Plane', points=[], constraints=[]):
     print(points)
     print(myMap)
 
+    def getAlternateName(name):
+        if name is None:
+            return None
+        nameParts = name.split("-")
+        return nameParts[1] + '-' + nameParts[0]
+
     lineMap = {}
     for index in range(len(points)):
         previousIndex = len(points) - 1 if index == 0 else index - 1
         previousPointIndex = points[previousIndex]['index']
         currentPointIndex = points[index]['index']
-        lineIdx = addLine(previousPointIndex, currentPointIndex)
-        print(lineIdx)
         previousPointName = points[previousIndex]['name']
         currentPointName = points[index]['name']
-        lineMap["{previousPointName}-{currentPointName}".format(previousPointName=previousPointName, currentPointName=currentPointName)] = lineIdx
+        segName = previousPointName + '-' + currentPointName
+        arcSegment = segments.get(segName) or segments.get(getAlternateName(segName))
+        if arcSegment is None:
+            lineIdx = addLine(previousPointIndex, currentPointIndex)
+            lineMap["{previousPointName}-{currentPointName}".format(previousPointName=previousPointName, currentPointName=currentPointName)] = lineIdx
+            print(lineIdx)
+        else:
+            radius = 100
+            lineIdx = addArc(previousPointIndex, currentPointIndex)
+            print(lineIdx)
+            lineMap["{previousPointName}-{currentPointName}".format(previousPointName=previousPointName, currentPointName=currentPointName)] = lineIdx
+            print('MAKE ARC!!!')
+        
 
     print(lineMap)
+
 
     def findLineIndex(lineName = ""):
         if lineName is None:
             return None
-        nameParts = lineName.split("-")
-        alternateName = nameParts[1] + '-' + nameParts[0]
+        alternateName = getAlternateName(lineName)
         return lineMap.get(lineName) or lineMap.get(alternateName)
 
     for constraint in constraints:
@@ -179,6 +169,25 @@ def makeSketch(sketchName, plane = 'YZ_Plane', points=[], constraints=[]):
         elif conType == 'perpendicularDistance':
             distance = constraint['value']
             ActiveSketch.addConstraint(Sketcher.Constraint('Distance',pointIdx,1,lineIdx,distance))
+        elif conType == 'HorizontalPoints':
+            points = constraint['points']
+            idx = ActiveSketch.addConstraint(Sketcher.Constraint('Horizontal',myMap.get(points[0]),1,myMap.get(points[1]),1))
+        elif conType == 'Tangents':
+            tangents = constraint['tangents']
+            for points in tangents:
+                line1Idx  = findLineIndex(points[0] + '-' + points[1])
+                line2Idx  = findLineIndex(points[1] + '-' + points[2])
+                ActiveSketch.addConstraint(Sketcher.Constraint('Tangent',line1Idx,line2Idx))
+        elif conType == 'radii':
+            radii = constraint['radii']
+            for radius in radii:
+                lineIdx = findLineIndex(radius[0])
+                ActiveSketch.addConstraint(Sketcher.Constraint('Radius', lineIdx, radius[1]))
+
+            # lines = constraint['lines']
+            # line1Idx = lineIdx = findLineIndex(lines[0])
+            # line2Idx = lineIdx = findLineIndex(lines[1])
+            # ActiveSketch.addConstraint(Sketcher.Constraint('Tangent',line1Idx,line2Idx))
 
 def makeFrame2(partName, plane = 'YZ_Plane'):
     points = [
@@ -244,8 +253,102 @@ def makeFrame2(partName, plane = 'YZ_Plane'):
     else:
         f.Placement.Base = App.Vector(0, -extendedWidth/2,0)
 
-makeFrame2('initial')
-makeFrame('copy', 'XZ_Plane')
 
+points = [
+    {
+        'name': 'baseR',
+        'constraint': 'AcuteTangent',
+    },
+    {
+        'name': 'baseL',
+        'constraint': 'AcuteTangent',
+    },
+    {
+        'name': 'bottomFilletL',
+        'constraint': 'Tangent',
+    },
+    {
+        'name': 'TopFilletL',
+        'constraint': 'Tangent',
+    },
+    {
+        'name': 'TopFilletR',
+        'constraint': 'Tangent',
+    },
+    {
+        'name': 'bottomFilletR',
+        'constraint': 'Tangent',
+    },
+]
+
+constraints = [
+        {
+            'type': 'radii',
+            'radii': [
+                ['baseL-bottomFilletL', 5],
+                ['baseR-bottomFilletR', 5],
+                ['TopFilletL-TopFilletR', 5],
+            ]
+        },
+        {
+            'type': 'Horizontal',
+            'line': 'baseR-baseL',
+        },
+        {
+            'type': 'HorizontalPoints',
+            'points': ['bottomFilletL', 'bottomFilletR'],
+        },
+        {
+            'type': 'HorizontalPoints',
+            'points': ['TopFilletL', 'TopFilletR'],
+        },
+        {
+            'type': 'Tangents',
+            'tangents': [
+                ['baseR', 'baseL', 'bottomFilletL'],
+                ['baseL', 'bottomFilletL', 'TopFilletL'],
+                ['bottomFilletL', 'TopFilletL', 'TopFilletR'],
+                ['TopFilletL', 'TopFilletR', 'bottomFilletR'],
+                ['TopFilletR', 'bottomFilletR', 'baseR'],
+                ['bottomFilletR', 'baseR', 'baseL'],
+            ],
+        },
+        # {
+        #     'type': 'Distance',
+        #     'value': width,
+        #     'line': 'baseR-baseL'
+        # },
+        # {
+        #     'type': 'OnXAxis',
+        #     'line': 'baseR-baseL'
+        # },
+        # {
+        #     'type': 'OriginXDistance',
+        #     'value': width/2,
+        #     'point': 'baseR',
+        # },
+        # {
+        #     'type': 'OnYAxis',
+        #     'point': 'top',
+        # },
+        # {
+        #     'type': 'perpendicularDistance',
+        #     'value': height,
+        #     'point': 'top',
+        #     'line': 'baseR-baseL'
+        # },
+    ]
+
+segments = {
+    'bottomFilletR-baseR': 'arc',
+    'baseL-bottomFilletL': 'arc',
+    'TopFilletL-TopFilletR': 'arc',
+}
+
+
+# makeFrame2('initial')
+# makeFrame('copy', 'XZ_Plane')
+
+makeSketch('hookBase', 'YZ_Plane', points, constraints, segments)
 
 App.ActiveDocument.recompute()
