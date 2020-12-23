@@ -123,7 +123,7 @@ JSCAD provides the ability to:
 - Save 3D models as STL (and other) formats
 
 JSCAD is available as a:
-- [Website](www.jscad.xyz)
+- [Website](https://www.jscad.xyz/)
 - Command line application for backend processing
 - User application
 - Set of packages (libraries) for building custom applications
