@@ -4,14 +4,21 @@ const { expand } = require('@jscad/modeling').expansions
 const { union, subtract } = require('@jscad/modeling').booleans
 const { translateY, translateZ, rotateX, rotateY, rotateZ } = require('@jscad/modeling').transforms
 
-let width = 120
-let extendedWidth = width*1.1
-let height = 85
-let holeR = 28
-let thickness = 2
-let hookHeight = 10
+const getParameterDefinitions = () => {
+    return [
+        { name: 'width', type: 'slider', initial: 120, min: 50, max: 250, step: 5, caption: 'Width' },
+        { name: 'height', type: 'slider', initial: 85, min: 40, max: 150, step: 5, caption: 'Height' },
+        { name: 'holeR', type: 'slider', initial: 28, min: 10, max: 40, step: 2, caption: 'Door Radius' },
+        { name: 'thickness', type: 'slider', initial: 2, min: 0.5, max: 5, step: 0.5, caption: 'Wall Thickness' },
+        { name: 'hookHeight', type: 'slider', initial: 10, min: 8, max: 14, step: 2, caption: 'Hook Height' },
+    ]
+}
 
-const door = () => {
+const door = ({
+    width,
+    holeR,
+    thickness,
+}) => {
     let shape
     shape = cylinder({radius: holeR, height: width*2})
     shape = rotateY(Math.PI/2, shape)
@@ -19,7 +26,12 @@ const door = () => {
     return shape
 }
     
-const topHook = () => {
+const topHook = ({
+    width,
+    height,
+    thickness,
+    hookHeight,
+}) => {
     const points = [
         [-width/4-30,-0.1],
         [width/4+30,-0.1],
@@ -46,7 +58,12 @@ const topHook = () => {
     return shape
 }
 
-const frameShell = () => {
+const frameShell = ({
+    width,
+    height,
+    thickness,
+}) => {
+    const extendedWidth = width*1.1
     let shape
     shape = polygon({points: [[-width/2,0], [width/2,0], [0,height]]})
     let outer = expand({delta: thickness, corners: 'round'}, shape)
@@ -57,13 +74,11 @@ const frameShell = () => {
     return shape
 }
 
-module.exports = {
-    main:  () => {
-        let shape
-        shape = subtract(frameShell(), door())
-        let rotatedCopy = rotateZ(Math.PI/2, shape)
-        shape = union(shape, rotatedCopy)
-        shape = union(shape, topHook())
-        return shape
-    }
+const main = (params) => {
+    let shape
+    shape = subtract(frameShell(params), door(params))
+    let rotatedCopy = rotateZ(Math.PI/2, shape)
+    return union(shape, rotatedCopy, topHook(params))
 }
+
+module.exports = { main, getParameterDefinitions }
