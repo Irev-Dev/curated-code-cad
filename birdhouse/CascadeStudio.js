@@ -1,8 +1,8 @@
-let width = 120
-let height = 85
-let holeR = 28
-let thickness = 2
-let hookHeight = 10
+let width      = Slider("Width"      , 120, 100, 200);
+let height     = Slider("Height"     ,  85, 100, 100);
+let holeR      = Slider("Hole Radius",  28,   1,  30);
+let thickness  = Slider("Thickness"  ,   2,   1,  15);
+let hookHeight = Slider("Hook Height",  10,   3,  15);
 
 const hole = () => Translate([0,0,holeR+2], Rotate([1,0,0], 90,Translate([0,0,-width],Cylinder(holeR, width*2))))
 
