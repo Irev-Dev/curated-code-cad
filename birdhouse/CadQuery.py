@@ -25,19 +25,27 @@ def frame(shouldRotate = False):
     return turn90(temp, shouldRotate)
 
 def hookBody():
-    return (
+    result = (
         cq.Workplane("YZ")
         .moveTo(-width/4,1)
         .lineTo(0,hookHeight)
         .lineTo(width/4,1)
-        .lineTo(width/4+5,0)
-        .lineTo(-width/4-5,0)
+        .lineTo(width/4+30,0)
+        .lineTo(-width/4-30,0)
         .close()
         .extrude(thickness*1.5)
-        .edges("|X exc (<Y or >Y)")
-        .fillet(10)
-        .translate((-thickness*1.5/2,0,height))
+        .edges("(|X except <Z)")
     )
+
+    print('hi')
+    for rad in [30, 25, 20, 15, 10, 5, 4, 3, 2, 1, 0.5, 0.1]:
+        try:
+            filleted_result = result.fillet(rad)
+            break
+        except OCP.StdFail.StdFail_NotDone:
+            pass
+        print(f"final radius: {rad}")
+    return filleted_result.translate((-thickness*1.5/2,0,height+thickness/2))
 
 def hookVoid():
     return (
@@ -64,10 +72,9 @@ def door(shouldRotate = False):
 result = (
     frame()
     .union(frame(True))
-    .union(hookBody())
+    .union(hookBody().cut(hookVoid()))
     .cut(
-        hookVoid()
-        .union(door())
+        door()
         .union(door(True))
     )
 )
