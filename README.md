@@ -197,8 +197,16 @@ Tovero is a binding of Libfive to Common Lisp, including a standalone REPL-based
 
 Not quiet Code-Cad, but they do embody much of the same thought process.
 
+### [bitbybit](https://bitbybit.dev/home)
+- [Repo](https://github.com/bitbybit-dev/bitbybit)
+- [Community](https://discord.com/invite/GSe3VMe)
+- ~Docs~
+- License: MIT
+- ~Online editor~ It might be behind a signup
+
 ### [BlocksCAD](https://www.blockscad3d.com)
-- [Repo](https://github.com/einsteinsworkshop/blockscad) I'm not 100% sure its connected to blockscad3d.com or not
+Looks to be unmaintained.
+- [Repo](https://github.com/einsteinsworkshop/blockscad)
 - [Community](https://www.blockscad3d.com)
 - [Docs](https://www.blockscad3d.com/training-resources)
 - License: GPL-3
