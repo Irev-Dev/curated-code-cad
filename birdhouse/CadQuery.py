@@ -5,76 +5,41 @@ diameter = 22.0
 holeDia = 28.0
 hookHeight = 10.0
 
-def turn90(shape, shouldRotate):
-    if shouldRotate:
-        return shape.rotateAboutCenter((0,0,1),90)
-    return shape
+frame_pts = [(-width*0.95/2,0),(width*0.95/2,0),(0,height)]
+
+hook_pts = [(-width/2.5,0), (0,hookHeight), (width/2.5,0),]
+hook_tgts = [(1,0),(1,0)]
+
+hook_hole_pts = [(-hookHeight/2,0),(0,hookHeight/2),(hookHeight/2,0)]
 
 def frame(shouldRotate = False):
-    temp = (
-        cq.Workplane("YZ")
-        .moveTo(-width*0.95/2,0)
-        .lineTo(width*0.95/2,0)
-        .lineTo(0,height)
-        .close()
-        .extrude(width)
-        .faces('|X')
-        .shell(thickness)
-        .translate((-width/2,0,0))
-    )
-    return turn90(temp, shouldRotate)
-
-def hookBody():
-    result = (
-        cq.Workplane("YZ")
-        .moveTo(-width/4,1)
-        .lineTo(0,hookHeight)
-        .lineTo(width/4,1)
-        .lineTo(width/4+30,0)
-        .lineTo(-width/4-30,0)
-        .close()
-        .extrude(thickness*1.5)
-        .edges("(|X except <Z)")
-    )
-
-    print('hi')
-    for rad in [30, 25, 20, 15, 10, 5, 4, 3, 2, 1, 0.5, 0.1]:
-        try:
-            filleted_result = result.fillet(rad)
-            break
-        except OCP.StdFail.StdFail_NotDone:
-            pass
-        print(f"final radius: {rad}")
-    return filleted_result.translate((-thickness*1.5/2,0,height+thickness/2))
-
-def hookVoid():
     return (
         cq.Workplane("YZ")
-        .moveTo(-hookHeight/2,0)
-        .lineTo(0,hookHeight/2)
-        .lineTo(hookHeight/2,0)
+        .polyline(frame_pts)
         .close()
-        .extrude(thickness*2)
-        .edges("|X")
-        .fillet(0.5)
-        .translate((-thickness,0,height))
+        .extrude(width/2,both=True)
+        .faces('|X')
+        .shell(thickness)
+        .transformed((0,90,0),(0,holeDia+thickness,0))
+        .circle(holeDia)
+        .cutThruAll()
     )
 
-def door(shouldRotate = False):
-    temp = (
-        cq.Workplane("YZ")
-        .circle(holeDia)
-        .extrude(width*4)
-        .translate((-width*2,0,holeDia+thickness))
+def hook():
+    return (
+        cq.Workplane("YZ",origin=(-thickness*1.5/2,0,height+thickness/2))
+        .spline(hook_pts,tangents=hook_tgts)
+        .close()
+        .extrude(thickness*1.5)
+        .polyline(hook_hole_pts)
+        .close()
+        .cutThruAll()
+        .faces('|(0,1,1)').edges('>Z')
+        .fillet(thickness/2)
     )
-    return turn90(temp, shouldRotate)
 
 result = (
     frame()
-    .union(frame(True))
-    .union(hookBody().cut(hookVoid()))
-    .cut(
-        door()
-        .union(door(True))
-    )
+    .union(frame().rotateAboutCenter((0,0,1),90))
+    .union(hook())
 )
