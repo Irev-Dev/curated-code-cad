@@ -2,10 +2,28 @@
 
 <img src="https://raw.githubusercontent.com/Irev-Dev/repo-images/main/images/CURATED-CODE-CAD-BANNER2.jpg">
 
-#### [See the web page version](https://kurthutten.com/blog/curated-code-cad/)
+### [See the web page version](https://kurthutten.com/blog/curated-code-cad/)
 
-You like 3d modelling, but don't like using a GUI. Good for you! But which modeller do you use??
-You'll have to figure that out for yourself, but here are some options.
+
+## What is Code-CAD?
+It's software that allows you to define 3D CAD models with code. It's a niche popular amongst software devs for obvious reasons — it gives you parametric models almost by default and it's easy to maintain and extend models within a team over time when paired with git. The coding nature of it allows teams to build their own abstraction for re-use and quick prototyping. The [Cadhub](https://cadhub.xyz/) homepage has a good breakdown of the potential of the Code-CAD paradigm.
+
+## Which one should you use?
+
+I recommend reading through the entire list below to see if one chimes with you and your needs, beyond that I can make the following recommendation and points:
+- My main recommendation is to use one of the packages that wrap OpenCascade (a mature C++ CAD library). Packages that do so are CadQuery, CascadeStudio and pythonOCC. My reasons for recommending these are as follows:
+  - Most of Code-CAD tools are plagued with a CSG mindset (that is unions, subtractions and intersections of primitive shapes; cubes spheres etc). This is an inherently limited paradigm (one simple example of this is how internal fillets, which are important for reducing stress concentrations in parts, become very difficult). While CadQuery, CascadeStudio and pythonOCC still offer CSG functionality, you're also able to move beyond it with concepts like lofts and sweeps.
+  - OpenCascade uses a B-rep (boundary representation) kernel, In my opinion, this means you'll be learning a future-proof tool that won't limit the types of applications you can model for, which is likely the case for mesh kernels, which will cause trouble in for some applications like optics and injection moulding.
+  
+- OpenSCAD is tried and true, with lots of examples and tutorials floating around the internet. It also has a very intuitive syntax that many people without prior programming experience have been able to quickly pick up. However, some reasons you might want to look elsewhere are: 
+  - It can be hard to build powerful abstractions since they've rolled their own language. Consequences of this include that it doesn't have a package manager like many modern languages, and the presence of quirks with the language, such as function definitions that aren't ergonomic.
+  - Performance can start to suffer with complex parts.
+  - Its mesh-based kernel has limitations if you want to move beyond 3d-printed parts.
+- Check out the birdhouse example, while anecdotal, seeing the same part made with three different tools might help you decide which syntax you like the most.
+- You might want to simply pick a tool based on your language of choice. Clojure, Haskell, Lisp, Javascript and Python are all represented below.
+- If you want to make 3D art, Curv is specifically trying to hit that niche.
+
+No matter which one is your tool of choice, if you're here then you love Code-CAD and you might want to checkout [Cadhub](https://cadhub.xyz/). Think of it as Codepen crossed with a thing repository, and it's our love letter to the Maker community. Currently, CascadeStudio is the only integration, but we're working on more. [Site](https://cadhub.xyz/), [repo](https://github.com/Irev-Dev/cadhub).
 
 ## Special mention
 
@@ -16,7 +34,7 @@ You'll have to figure that out for yourself, but here are some options.
 - License: GPL-2
 - ~Online editor~
 
-The rest of the packages are in alphabetical order, but OpenScad gets a special mention because it's the OG. Many of the projects below were inspired by OpenScad and is the most well-known choice. If you're new to code-cad this is the safest choice, even if only from tutorials and content perspective.
+The rest of the packages are in alphabetical order, but OpenScad gets a special mention because it's the OG. Many of the projects below were inspired by OpenScad and is the most well-known choice. If you're new to code-cad this is the safest choice. The syntax is easy to pick up and there lots of guides around the internet.
 
 ### [OpenCascade](https://www.opencascade.com/)
 - [Repo](https://github.com/tpaviot/oce)
@@ -29,8 +47,10 @@ It's a c++ library that a number the projects below wrap. OpenCascade uses a Bou
 
 ## Contributing
 
-Know of a package that we missed? tell us with an issue or open up a PR.
-The description for each package is pretty minimal at the moment. If you'd like to add more detail to any of them please go ahead.
+There are a couple of ways you can help:
+- Know of a package that we missed? tell us with an issue or open up a PR.
+- Contribute a birdhouse design in one of the tools that's missing.
+- Do you think we missed an imporntant point for one of the projects, suggest more details.
 
 ## Here they are:
 
