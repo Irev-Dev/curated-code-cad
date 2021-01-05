@@ -6,7 +6,7 @@
 
 
 ## What is Code-CAD?
-It's software that allows you to define 3D CAD models with code. It's a niche popular amongst software devs for obvious reasons — it gives you parametric models almost by default and it's easy to maintain and extend models within a team over time when paired with git. The coding nature of it allows teams to build their own abstraction for re-use and quick prototyping. The [Cadhub](https://cadhub.xyz/) homepage has a good breakdown of the potential of the Code-CAD paradigm.
+It's software that allows you to define 3D CAD models with code. It's a niche popular amongst software devs for obvious reasons — it gives you parametric models almost by default and it's easy to maintain and extend models within a team over time when paired with git. The coding nature of it allows teams to build their own abstraction for re-use and quick prototyping. The [Cadhub](https://cadhub.xyz/) homepage has a good breakdown of the potential of the Code-CAD paradigm. Code-CAD is not to be confused with 3d geometry libraries, Code-CAD instead has opinionated abstractions for quickly developing mechanical parts.
 
 ## Which one should you use?
 
@@ -23,7 +23,7 @@ I recommend reading through the entire list below to see if one chimes with you 
 - You might want to simply pick a tool based on your language of choice. Clojure, Haskell, Lisp, Javascript and Python are all represented below.
 - If you want to make 3D art, Curv is specifically trying to hit that niche.
 
-No matter which one is your tool of choice, if you're here then you love Code-CAD and you might want to checkout [Cadhub](https://cadhub.xyz/). Think of it as Codepen crossed with a thing repository, and it's our love letter to the Maker community. Currently, CascadeStudio is the only integration, but we're working on more. [Site](https://cadhub.xyz/), [repo](https://github.com/Irev-Dev/cadhub).
+No matter which one is your tool of choice, if you're here and you love Code-CAD and you'll want to checkout [Cadhub](https://cadhub.xyz/). Think of it as Codepen crossed with a thing repository, and it's our love letter to the Maker community. Currently, CascadeStudio is the only Code-CAD integration, but we're working on more. [Site](https://cadhub.xyz/), [repo](https://github.com/Irev-Dev/cadhub).
 
 ## Special mention
 
@@ -49,8 +49,8 @@ It's a c++ library that a number the projects below wrap. OpenCascade uses a Bou
 
 There are a couple of ways you can help:
 - Know of a package that we missed? tell us with an issue or open up a PR.
-- Contribute a birdhouse design in one of the tools that's missing.
-- Do you think we missed an imporntant point for one of the projects, suggest more details.
+- Contribute a birdhouse design in one of the tools that are missing.
+- Do you think we missed an important point for one of the projects, suggest more details.
 
 ## Here they are:
 
