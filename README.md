@@ -197,7 +197,7 @@ Same author as scad-cji, he likes functional programming languages clearly.
 
 ### [sdfx](https://github.com/deadsy/sdfx)
 - [Repo](https://github.com/deadsy/sdfx)
-- ~Community~
+- [Community](https://github.com/deadsy/sdfx/issues)
 - [Docs](https://godoc.org/github.com/deadsy/sdfx/sdf)
 - License: MIT
 - ~Online editor~
