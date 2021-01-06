@@ -20,7 +20,7 @@ I recommend reading through the entire list below to see if one chimes with you 
   - Performance can start to suffer with complex parts.
   - Its mesh-based kernel has limitations if you want to move beyond 3d-printed parts.
 - Check out the birdhouse example, while anecdotal, seeing the same part made with three different tools might help you decide which syntax you like the most.
-- You might want to simply pick a tool based on your language of choice. Clojure, Haskell, Lisp, Javascript and Python are all represented below.
+- You might want to simply pick a tool based on your language of choice. Clojure, Go, Haskell, Lisp, Javascript and Python are all represented below.
 - If you want to make 3D art, Curv is specifically trying to hit that niche.
 
 No matter which one is your tool of choice, if you're here and you love Code-CAD and you'll want to checkout [Cadhub](https://cadhub.xyz/). Think of it as Codepen crossed with a thing repository, and it's our love letter to the Maker community. Currently, CascadeStudio is the only Code-CAD integration, but we're working on more. [Site](https://cadhub.xyz/), [repo](https://github.com/Irev-Dev/cadhub).
@@ -190,10 +190,19 @@ OpenSCAD DSL in Clojure. Functions generally mirror OpenSCAD, with a couple of n
 - [Repo](https://github.com/farrellm/scad-hs)
 - ~Community~
 - ~Docs~ (No docs but mirrors openscad functions)
-- License: BSD-3-Clause License 
+- License: BSD-3-Clause License
 - ~Online editor~
 
 Same author as scad-cji, he likes functional programming languages clearly.
+
+### [sdfx](https://github.com/deadsy/sdfx)
+- [Repo](https://github.com/deadsy/sdfx)
+- ~Community~
+- [Docs](https://godoc.org/github.com/deadsy/sdfx/sdf)
+- License: MIT
+- ~Online editor~
+
+Go-based Code-CAD package that uses a signed distance functions (SDFs) kernel. Is capable of doing fillets and chamfering.
 
 ### [SolidPython](https://solidpython.readthedocs.io/en/latest/)
 - [Repo](https://github.com/SolidCode/SolidPython)
