@@ -74,8 +74,8 @@ result = cq.Workplane("XY" ).box(3, 3, 0.5).edges("|Z").fillet(0.125)
 
 ### [CascadeStudio](https://zalo.github.io/CascadeStudio/)
 - [Repo](https://github.com/zalo/CascadeStudio)
-- ~Community~ repo says to use github issues
-- ~Docs~
+- [Community](https://github.com/zalo/CascadeStudio/discussions)
+- ~Docs~ No official docs, but the online editor does have intellisense support
 - License: MIT
 - [Online editor](https://zalo.github.io/CascadeStudio/)
 
