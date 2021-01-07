@@ -202,7 +202,7 @@ Same author as scad-cji, he likes functional programming languages clearly.
 - License: MIT
 - ~Online editor~
 
-Go-based Code-CAD package that uses a signed distance functions (SDFs) kernel. Is capable of doing fillets and chamfering.
+Go-based Code-CAD package that uses a signed distance functions (SDFs) kernel. Is capable of doing fillets and chamfering. The repo includes a [standard-library](https://github.com/deadsy/sdfx/tree/master/obj).
 
 ### [SolidPython](https://solidpython.readthedocs.io/en/latest/)
 - [Repo](https://github.com/SolidCode/SolidPython)
