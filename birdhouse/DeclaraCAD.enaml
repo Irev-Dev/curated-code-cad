@@ -1,0 +1,69 @@
+# Created in DeclaraCAD
+from math import radians
+from declaracad.occ.api import *
+from declaracad.parts.display import Axis
+
+
+enamldef Birdhouse(Part): part:
+    attr width = 120
+    attr height = 85
+    attr thickness = 2
+    attr hole_radius = 28
+    attr hook_height = 10
+    
+    Fuse: house:
+        material = 'brass'
+        
+        Cut: first_side:
+            ThickSolid: 
+                # Offset is negative so the corners are squared instead of rounded
+                offset = -thickness
+                faces = children[0].topology.faces[3:5]
+                Extrude: 
+                    vector = (0, width, 0)
+                    Face:
+                        Polygon: profile:
+                            # Polygon centered around the y axis
+                            attr w = width/2
+                            points = [
+                                (-w, -w),
+                                (0, -w, height),
+                                (w, -w, 0),
+                            ]
+            Cylinder: hole:
+                position = (-width/2, 0, height/4+thickness)
+                direction = (1, 0, 0)
+                radius = hole_radius
+                height = width
+        
+        Transform: second_side:
+            operations = [Rotate(angle=radians(90))]
+            shape = first_side
+    
+        Transform: hook:
+            position = (0, -thickness/2, height)
+            Extrude:
+                vector = (0, thickness, 0)
+                Face:
+                    Wire: hook_profile:
+                        Polyline: hook_half_profile:
+                            points = [
+                                (0, 0, hook_height/3),
+                                (5, 0, -thickness),
+                                (width/4, 0, -thickness),
+                                (5, 0, hook_height),
+                                (0, 0, hook_height),
+                            ]
+                        Transform:
+                            operations = [Mirror(z=1)]
+                            shape = hook_half_profile
+
+        
+enamldef Assembly(Part):
+    Axis: # Display origin axis
+        color = 'black'
+    Plane: # Display a ground plane
+        color = 'white'
+        bounds = [(-1000, -1000), (1000, 1000)]
+    Birdhouse:
+        pass
