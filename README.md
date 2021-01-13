@@ -117,7 +117,7 @@ Curv is a programming language for creating art using mathematics. It’s a 2D a
 - License: GPL-3
 - ~Online editor~
 
-A declarative parametric 3D modeling program built using [OpenCASCADE](https://github.com/LaughlinResearch/pyOCCT)
+A declarative parametric 3D modelling program built using [OpenCASCADE](https://github.com/LaughlinResearch/pyOCCT)
 and [enaml](https://github.com/nucleic/enaml/).
 
 
