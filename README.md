@@ -20,7 +20,7 @@ I recommend reading through the entire list below to see if one chimes with you 
   - Performance can start to suffer with complex parts.
   - Its mesh-based kernel has limitations if you want to move beyond 3d-printed parts.
 - Check out the birdhouse example, while anecdotal, seeing the same part made with three different tools might help you decide which syntax you like the most.
-- You might want to simply pick a tool based on your language of choice. Clojure, Go, Haskell, Lisp, Javascript and Python are all represented below.
+- You might want to simply pick a tool based on your language of choice. Clojure, enaml, Go, Haskell, Lisp, Javascript and Python are all represented below.
 - If you want to make 3D art, Curv is specifically trying to hit that niche.
 
 No matter which one is your tool of choice, if you're here and you love Code-CAD and you'll want to checkout [Cadhub](https://cadhub.xyz/). Think of it as Codepen crossed with a thing repository, and it's our love letter to the Maker community. Currently, CascadeStudio is the only Code-CAD integration, but we're working on more. [Site](https://cadhub.xyz/), [repo](https://github.com/Irev-Dev/cadhub).
