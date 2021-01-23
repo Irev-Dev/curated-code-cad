@@ -68,6 +68,15 @@ AngelCAD aim to do two things:
 
 AngelCAD is capable of running OpenSCAD script for interoperability and has features like text support and DXF import coming soon.
 
+### [bitbybit](https://bitbybit.dev/home)
+- [Repo](https://github.com/bitbybit-dev/bitbybit)
+- [Community](https://discord.com/invite/GSe3VMe)
+- [Docs](https://docs.bitbybit.dev/)
+- License: MIT
+- [Online editor](https://bitbybit.dev/app)
+
+bitbybit is both a node editor and Code-CAD as they have exposed a [typescript](https://medium.com/@bitbybit/v0-3-0-release-typescript-in-monaco-editor-for-bit-by-bit-developers-46bcb1a3b91) interface that can be used in their app.
+
 ### [CadHub](https://cadhub.xyz/)
 - [Repo](https://github.com/Irev-Dev/cadhub)
 - [Community](https://discord.com/invite/SD7zFRNjGH)
@@ -236,13 +245,6 @@ Tovero is a binding of Libfive to Common Lisp, including a standalone REPL-based
 ## Node editors / other
 
 Not quiet Code-Cad, but they do embody much of the same thought process.
-
-### [bitbybit](https://bitbybit.dev/home)
-- [Repo](https://github.com/bitbybit-dev/bitbybit)
-- [Community](https://discord.com/invite/GSe3VMe)
-- ~Docs~
-- License: MIT
-- ~Online editor~ It might be behind a signup
 
 ### [BlocksCAD](https://www.blockscad3d.com)
 Looks to be unmaintained.
