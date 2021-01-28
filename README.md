@@ -265,7 +265,7 @@ Dynamo is, quite literally, what you make it. Working with Dynamo may include us
 
 
 ### [MakeCode](https://makecode.buildbee.com/)
-- [Repo](https://github.com/jfo8000/pxt-buildbee)
+- [Repo](https://github.com/buildbee/makecode)
 - ~Community~
 - [Docs](https://makecode.buildbee.com/) (tutorials)
 - License: MIT
