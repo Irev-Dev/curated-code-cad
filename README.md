@@ -266,12 +266,12 @@ Dynamo is, quite literally, what you make it. Working with Dynamo may include us
 
 ### [MakeCode](https://makecode.buildbee.com/)
 - [Repo](https://github.com/jfo8000/pxt-buildbee)
-- ~Community~ repo says to use github issues
+- ~Community~
 - [Docs](https://makecode.buildbee.com/) (tutorials)
 - License: MIT
 - [Online editor](https://makecode.buildbee.com/)
 
-MakeCode's block editor supplies a great deal of helpers that make it perfect for making functional 3d prints, for example there are functions that help stack and layout parts, as well as fillet utils (called styled edges). It also has a fast hull function (called wrap shapes). MakeCode is sponsored by [BuildBee]( https://buildbee.com).
+MakeCode's block editor supplies many great deal of helpers that make it perfect for making functional 3d prints, for example, there are functions that help stack and layout parts, as well as fillet utils (called styled edges). It also has a fast hull function (called wrap shapes). MakeCode is sponsored by [BuildBee]( https://buildbee.com).
 
 ### [Sverchok](https://github.com/nortikin/sverchok)
 - [Repo](https://github.com/nortikin/sverchok)
