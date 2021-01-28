@@ -103,7 +103,7 @@ result = cq.Workplane("XY" ).box(3, 3, 0.5).edges("|Z").fillet(0.125)
 
 ### [CascadeStudio](https://zalo.github.io/CascadeStudio/)
 - [Repo](https://github.com/zalo/CascadeStudio)
-- ~Community~ repo says to use github issues
+- [Community](https://github.com/zalo/CascadeStudio/discussions)
 - ~Docs~
 - License: MIT
 - [Online editor](https://zalo.github.io/CascadeStudio/)
@@ -262,6 +262,16 @@ Looks to be unmaintained.
 - ~Online editor~
 
 Dynamo is, quite literally, what you make it. Working with Dynamo may include using the application, either in connection with other Autodesk software or not, engaging a Visual Programming process, or participating in a broad community of users and contributors. Works with [FreeCad](https://github.com/infeeeee/DynFreeCAD)
+
+
+### [MakeCode](https://makecode.buildbee.com/)
+- [Repo](https://github.com/jfo8000/pxt-buildbee)
+- ~Community~ repo says to use github issues
+- [Docs](https://makecode.buildbee.com/) (tutorials)
+- License: MIT
+- [Online editor](https://makecode.buildbee.com/)
+
+MakeCode's block editor supplies a great deal of helpers that make it perfect for making functional 3d prints, for example there are functions that help stack and layout parts, as well as fillet utils (called styled edges). It also has a fast hull function (called wrap shapes).
 
 ### [Sverchok](https://github.com/nortikin/sverchok)
 - [Repo](https://github.com/nortikin/sverchok)
