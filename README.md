@@ -24,7 +24,7 @@ I recommend reading through the entire list below to see if one chimes with you 
 - You might want to simply pick a tool based on your language of choice. Clojure, enaml, Go, Haskell, Lisp, Javascript and Python are all represented below.
 - If you want to make 3D art, Curv is specifically trying to hit that niche.
 
-No matter which one is your tool of choice, if you're here and you love Code-CAD and you'll want to checkout [Cadhub](https://cadhub.xyz/). Think of it as Codepen crossed with a thing repository, and it's our love letter to the Maker community. Currently there are integrations for OpenSCAD, CadQuery and JSCAD we're working on more. [Site](https://cadhub.xyz/), [repo](https://github.com/Irev-Dev/cadhub).
+No matter which one is your tool of choice, if you're here and you love Code-CAD and you'll want to checkout [Cadhub](https://cadhub.xyz/). Think of it as Codepen crossed with a thing repository, and it's our love letter to the Maker community. Currently there are integrations for OpenSCAD, CadQuery and JSCAD, and we're working on more. [Site](https://cadhub.xyz/), [repo](https://github.com/Irev-Dev/cadhub).
 
 ## Special mention
 
