@@ -6,7 +6,7 @@
 It's now maintain as part of the [CadHub docs](https://learn.cadhub.xyz/blog/curated-code-cad). This readme will be kept in sync with an changes there.
 
 ## What is Code-CAD?
-It's software that allows you to define 3D CAD models with code. It's a niche popular amongst software devs for obvious reasons — it gives you parametric models almost by default and it's easy to maintain and extend models within a team over time when paired with git. The coding nature of it allows teams to build their own abstraction for re-use and quick prototyping. The [Cadhub](https://cadhub.xyz/) homepage has a good breakdown of the potential of the Code-CAD paradigm. Code-CAD is not to be confused with 3d geometry libraries, Code-CAD instead has opinionated abstractions for quickly developing mechanical parts.
+It's software that allows you to define 3D CAD models with code. It's a niche popular amongst software devs for obvious reasons — it gives you parametric models almost by default and it's easy to maintain and extend models within a team over time when paired with git. The coding nature of it allows teams to build their own abstraction for re-use and quick prototyping. The [Cadhub docs](https://learn.cadhub.xyz/) has a good breakdown of the potential of the Code-CAD paradigm. Code-CAD is not to be confused with 3d geometry libraries, Code-CAD instead has opinionated abstractions for quickly developing mechanical parts.
 
 ## Which one should you use?
 
@@ -20,11 +20,11 @@ I recommend reading through the entire list below to see if one chimes with you 
   - It can be hard to build powerful abstractions since they've rolled their own language. Consequences of this include that it doesn't have a package manager like many modern languages, and the presence of quirks with the language, such as function definitions that aren't ergonomic.
   - Performance can start to suffer with complex parts.
   - Its mesh-based kernel has limitations if you want to move beyond 3d-printed parts.
-- Check out the birdhouse example, while anecdotal, seeing the same part made with three different tools might help you decide which syntax you like the most.
+- Check out the [birdhouse example](https://github.com/Irev-Dev/curated-code-cad/tree/main/birdhouse), while anecdotal, seeing the same part made with different tools might help you decide which syntax you like the most.
 - You might want to simply pick a tool based on your language of choice. Clojure, enaml, Go, Haskell, Lisp, Javascript and Python are all represented below.
 - If you want to make 3D art, Curv is specifically trying to hit that niche.
 
-No matter which one is your tool of choice, if you're here and you love Code-CAD and you'll want to checkout [Cadhub](https://cadhub.xyz/). Think of it as Codepen crossed with a thing repository, and it's our love letter to the Maker community. Currently, CascadeStudio is the only Code-CAD integration, but we're working on more. [Site](https://cadhub.xyz/), [repo](https://github.com/Irev-Dev/cadhub).
+No matter which one is your tool of choice, if you're here and you love Code-CAD and you'll want to checkout [Cadhub](https://cadhub.xyz/). Think of it as Codepen crossed with a thing repository, and it's our love letter to the Maker community. Currently there are integrations for OpenSCAD, CadQuery and JSCAD, and we're working on more. [Site](https://cadhub.xyz/), [repo](https://github.com/Irev-Dev/cadhub).
 
 ## Special mention
 
@@ -33,7 +33,7 @@ No matter which one is your tool of choice, if you're here and you love Code-CAD
 - [Community](http://www.openscad.org/community.html)
 - [Docs](http://www.openscad.org/documentation.html)
 - License: GPL-2
-- [Online editor](https://cadhub.xyz/dev-ide/openScad)
+- [Online editor](https://cadhub.xyz/dev-ide/openscad)
 
 The rest of the packages are in alphabetical order, but OpenSCAD gets a special mention because it's the OG. Many of the projects below were inspired by OpenSCAD and is the most well-known choice. If you're new to code-cad this is the safest choice. The syntax is easy to pick up and there lots of guides around the internet.
 
@@ -93,7 +93,7 @@ A community hub for sharing code-cad projects. Currently integrates with [CadQue
 - [Community](https://discord.gg/qz3uAdF)
 - [Docs](https://cadquery.readthedocs.io/en/latest/intro.html)
 - License: Apache, 2.0
-- [Online editor](https://cadhub.xyz/dev-ide/cadQuery)
+- [Online editor](https://cadhub.xyz/dev-ide/cadquery)
 
 CadQuery is a Python library that wraps and extends [OpenCascade](https://github.com/tpaviot/oce). It has a philosophy of capturing design intent. The API has been designed to be as close as possible to how you’d describe the object to a human. An example of this is its ability to "select" parts of the model's geometry to run operations on, such as the following code that selects only the edges running along the Z-axis and fillets them.
 
@@ -225,6 +225,15 @@ Same author as scad-cji, he likes functional programming languages clearly.
 - ~~Online editor~~
 
 Go-based Code-CAD package that uses a signed distance functions (SDFs) kernel. Is capable of doing fillets and chamfering. The repo includes a [standard-library](https://github.com/deadsy/sdfx/tree/master/obj).
+
+### [sdf-csg](https://github.com/wwwtyro/sdf-csg)
+- [Repo](https://github.com/wwwtyro/sdf-csg)
+- ~~Community~~
+- [Docs](https://github.com/wwwtyro/sdf-csg)
+- License: The Unlicense
+- ~~Online editor~~
+
+Generate meshes from signed distance functions and constructive solid geometry operations. This library is heavily based upon [Inigo Quilez's](https://iquilezles.org/index.html) [3D SDFs](https://iquilezles.org/www/articles/distfunctions/distfunctions.htm) article.
 
 ### [SolidPython](https://solidpython.readthedocs.io/en/latest/)
 - [Repo](https://github.com/SolidCode/SolidPython)
