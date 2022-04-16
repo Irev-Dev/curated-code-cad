@@ -87,7 +87,7 @@ bitbybit is both a node editor and Code-CAD as they have exposed a [typescript](
 
 A community hub for sharing code-cad projects. Currently integrates with [CadQuery](https://cadquery.readthedocs.io/en/latest/intro.html) and [OpenScad](http://www.openscad.org/). Built and maintained by yours truly.
 
-![CadHub IDE screenshot](/img/blog/curated-code-cad/CadHubSS.jpg)
+![CadHub IDE screenshot](https://learn.cadhub.xyz/assets/images/CadHubSS-a1a4921d6e062cf32fefc3228ac8aa5d.jpg)
 ### [CadQuery](https://cadquery.readthedocs.io/en/latest/intro.html)
 - [Repo](https://github.com/CadQuery/cadquery)
 - [Community](https://discord.gg/qz3uAdF)
