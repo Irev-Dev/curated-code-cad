@@ -199,6 +199,20 @@ Python-based, Also uses [OpenCascade](https://github.com/tpaviot/oce).
 
 Another project inspired by OpenSCAD. The author considers key differences to be procedural vs functional programming language style, (i.e variables can be modified) and the use of arbitrary precision arithmetic throughout (meaning there are no unexpected double/float rounding errors). There is a handy [feature matrix](https://github.com/GilesBathgate/RapCAD/blob/master/doc/feature_matrix.asciidoc) between RapCAD, OpenSCAD and ImplicitCad.
 
+### [replicad](https://replicad.xyz)
+- [Repo](https://github.com/sgenoud/replicad)
+- [Community](https://github.com/sgenoud/replicad/discussions)
+- [Docs](https://replicad.xyz/docs/intro)
+- License: AGPL
+- [Online editor](https://studio.replicad.xyz/visualiser)
+
+
+A library to build browser based 3D models with code. Exposes an API inspired by
+[CadQuery](https://cadquery.readthedocs.io/en/latest/intro.html), written to
+run in the browser. Replicad is a javascript wrapper on top of
+[opencascade.js](https://github.com/donalffons/opencascade.js/)
+
+
 ### [scad-clj](https://github.com/farrellm/scad-clj)
 - [Repo](https://github.com/farrellm/scad-clj)
 - ~~Community~~
@@ -292,4 +306,3 @@ MakeCode's block editor supplies many great deal of helpers that make it perfect
 - ~~Online editor~~
 
 Add-on for blender. Sverchok is a powerful parametric tool for architects, allowing geometry to be programmed visually with nodes.
-
