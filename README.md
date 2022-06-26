@@ -121,17 +121,6 @@ A javascript wrapper for [OpenCascade](https://github.com/tpaviot/oce) that runs
 
 Curv is a programming language for creating art using mathematics. It’s a 2D and 3D geometric modelling tool that supports full colour, animation and 3D printing. It was inspired by OpenSCAD and [shadertoy](https://www.shadertoy.com/).
 
-### [DeclaraCAD](https://declaracad.com/)
-- [Repo](https://github.com/codelv/declaracad)
-- ~~Community~~
-- [Docs](https://declaracad.com/docs/introduction/)
-- License: GPL-3
-- ~~Online editor~~
-
-A declarative parametric 3D modelling program built using [OpenCASCADE](https://github.com/LaughlinResearch/pyOCCT)
-and [enaml](https://github.com/nucleic/enaml/).
-
-
 ### [FreeCAD](https://www.freecadweb.org/)
 - [Repo](https://github.com/FreeCAD/FreeCAD)
 - [Community](https://forum.freecadweb.org/)
