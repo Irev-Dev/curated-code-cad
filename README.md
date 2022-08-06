@@ -229,6 +229,8 @@ Same author as scad-cji, he likes functional programming languages clearly.
 
 Go-based Code-CAD package that uses a signed distance functions (SDFs) kernel. Is capable of doing fillets and chamfering. The repo includes a [standard-library](https://github.com/deadsy/sdfx/tree/master/obj).
 
+Note that @soypat has [a rewrite](https://github.com/soypat/sdf) that might be worth checking out.
+
 ### [sdf-csg](https://github.com/wwwtyro/sdf-csg)
 - [Repo](https://github.com/wwwtyro/sdf-csg)
 - ~~Community~~
