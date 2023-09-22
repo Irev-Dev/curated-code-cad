@@ -18,7 +18,7 @@ I recommend reading through the entire list below to see if one chimes with you 
 
 - OpenSCAD is tried and true, with lots of examples and tutorials floating around the internet. It also has a very intuitive syntax that folks without prior programming experience have been able to quickly pick up. However, some reasons you might want to look elsewhere are:
   - It can be hard to build powerful abstractions since they've rolled their own language. Consequences of this include that it doesn't have a package manager like many modern languages, and the presence of quirks with the language, such as function definitions that aren't ergonomic.
-  - Performance can start to suffer with complex parts.
+  - Performance can start to suffer with complex parts. (Note that the development snapshot with experimental option 'manifold' enabled can provide a large speedup).
   - Its mesh-based kernel has limitations if you want to move beyond 3d-printed parts.
 - Check out the [birdhouse example](https://github.com/Irev-Dev/curated-code-cad/tree/main/birdhouse), while anecdotal, seeing the same part made with different tools might help you decide which syntax you like the most.
 - You might want to simply pick a tool based on your language of choice. Clojure, enaml, Go, Haskell, Lisp, Javascript and Python are all represented below.
