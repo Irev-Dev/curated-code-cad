@@ -179,6 +179,20 @@ JSCAD allows anyone to create 3D (or 2D) designs by combining simple shapes. And
 
 Libfive is a software library and set of tools for solid modelling, especially suited for parametric and procedural design. Lisp based language, (so (you (((((can expect ) lots of parentheses))))).
 
+### [manifold](https://github.com/elalish/manifold)
+- [Repo](https://github.com/elalish/manifold)
+- ~~Community~~
+- [Docs](https://manifoldcad.org/docs/html/modules.html)
+- License: Apache 2.0
+- [Online editor](https://manifoldcad.org/)
+
+Manifold is a fast and robust mesh library with support for CSG, SDF, and other miscellaneous mesh operations.
+It is currently used by OpenSCAD as an experimental backend with [huge speedup](https://github.com/openscad/openscad/pull/4533).
+It is not uncommon to see >100x speedup over the old backend of OpenSCAD.
+
+Manifold provides a C++ API as well as C, Python and JavaScript (typescript) bindings.
+Users can use its JavaScript binding with the [online editor](https://manifoldcad.org), and the result can be exported in either gltf and 3mf formats (3mf is an alternative to stl that preserves manifoldness).
+
 ### [pythonOCC](http://www.pythonocc.org/)
 - [Repo](https://github.com/tpaviot/pythonocc-core)
 - ~~Community~~
