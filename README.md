@@ -272,6 +272,16 @@ Generate meshes from signed distance functions and constructive solid geometry o
 
 Python-based library that wraps OpenSCAD, i.e. it outputs OpenSCAD code.
 
+### [SOMA](https://somacad.app)
+- [Repo](https://github.com/Kai-Jungsthoefel/SOMA)
+- [Community](https://github.com/Kai-Jungsthoefel/SOMA/discussions)
+- [Docs](https://github.com/Kai-Jungsthoefel/SOMA#quick-start)
+- License: GPL-3
+- ~~Online editor~~
+- 
+A desktop app (Windows, macOS, Linux) for designing [CadQuery](https://cadquery.readthedocs.io/en/latest/intro.html) models together with a CLI coding agent such as Claude Code, OpenCode or Codex CLI. The agent writes the model as plain Python code, SOMA rebuilds it on every change and shows it in a 3D viewer with measuring, section and exploded views. Every version is a Git commit, and models export to STEP, STL, 3MF and other formats. Plain CadQuery scripts can be opened and exported again, so the code stays usable without SOMA.
+![SOMA screecontent.com/Kai-Jungsthoefel/SOMA/main/docs/images/hero.png)
+
 ### [Tovero](https://www.gitlab.com/kavalogic-inc/tovero)
 - [Repo](https://www.gitlab.com/kavalogic-inc/tovero)
 - [Community](https://gitlab.com/kavalogic-inc/tovero/-/issues) (Gitlab Issues)
